@@ -1,0 +1,1 @@
+<input class="w-full p-2 border-1 border-gray-300 rounded-sm focus:outline-none hover:outline-none hover:border-gray-400" {{ $attributes }}>
