@@ -5,6 +5,7 @@ use App\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\StreamerController;
+use App\Http\Controllers\TopCategoryController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -27,3 +28,5 @@ Route::get('/profile', function () {
 });
 
 Route::get('/top-streamers', [StreamerController::class, 'topStreamers']);
+
+Route::get('/streamer/{id}', [TopCategoryController::class, 'show']);
